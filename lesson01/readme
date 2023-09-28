@@ -1,0 +1,15 @@
+1. Typescript is strongly typed language whereas Javascript is a loosely typed language.
+
+2. Strongly typed languages demand the specification of datatypes and enforce our code to execute without an error because it gives pre-warning before code execution.
+
+3. Loosely typed languages doesn't demand the specification for datatypes which can give you multiple errors and put you in trouble where you have to manually troubleshoot the error.
+
+4. If you want to stop compilation for any syntactical or datatype errors then uncomment the 'noEmitOnError' in tsconfig.json file.
+
+5. As you know "tsc <filename>.ts" command compiles your TS file to JS file so you need to specify the 'rootDir' and 'outDir' correctly like ("rootDir": "src" & "outDir": "/build/js") and also make a new script of "include": "src" so that only the TS files included in src folder which we'll create and make changes will only be compiled.
+
+6. A language that is strongly typed can be either statically or dynamically typed.
+
+7. TypeScript is statically typed language. This means types are checked at compilation time.
+
+8. JavaScript is a dynamically typed language . This means types are checked at run time.
