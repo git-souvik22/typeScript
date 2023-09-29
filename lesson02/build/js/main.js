@@ -10,3 +10,4 @@ album = true;
 let sum = (a, b) => {
     return a + b;
 };
+let regex = /\w+/g;
