@@ -1,14 +1,13 @@
 let myName: string = 'Souvik'
 let meaningOfLife: number;
 let isLoading: boolean;
-let album: any;
+let album: string | boolean;
 
 meaningOfLife = 10;
 isLoading = true;
 album = "Souvik";
 album = true;
-album = [];
 
-let sum = (a: number, b: number) => {
+let sum = (a: number, b: string) => {
     return a + b;
 }
