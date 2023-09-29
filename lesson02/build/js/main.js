@@ -8,3 +8,6 @@ isLoading = true;
 album = "Souvik";
 album = true;
 album = [];
+let sum = (a, b) => {
+    return a + b;
+};
