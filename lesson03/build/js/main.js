@@ -11,3 +11,6 @@ guitars.unshift('hey');
 let test = [];
 let bands = [];
 bands.push("Souvik Roy");
+// Tuple
+let myTuple = ["souvik", 22, true];
+let mixed = ["developa", 22, false];
