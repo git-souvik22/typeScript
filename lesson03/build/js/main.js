@@ -19,3 +19,11 @@ myTuple[1] = 12;
 let myObj;
 myObj = [];
 console.log(typeof myObj);
+myObj = bands;
+myObj = {};
+const exampleObj = {
+    prop1: "Souvik",
+    prop2: 22
+};
+// we cannot assign data types other than 22
+exampleObj.prop2 = 22;
