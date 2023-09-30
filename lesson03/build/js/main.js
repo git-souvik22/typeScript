@@ -15,3 +15,7 @@ bands.push("Souvik Roy");
 let myTuple = ["souvik", 22, true];
 let mixed = ["developa", 22, false];
 myTuple[1] = 12;
+// Object
+let myObj;
+myObj = [];
+console.log(typeof myObj);

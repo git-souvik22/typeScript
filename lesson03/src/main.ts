@@ -22,3 +22,11 @@ let myTuple: [string, number, boolean] = ["souvik", 22, true];
 let mixed = ["developa", 22, false];
 
 myTuple[1] = 12;
+
+// Object
+
+let myObj: object;
+
+myObj = []
+
+console.log(typeof myObj);
