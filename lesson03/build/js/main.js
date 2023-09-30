@@ -14,3 +14,4 @@ bands.push("Souvik Roy");
 // Tuple
 let myTuple = ["souvik", 22, true];
 let mixed = ["developa", 22, false];
+myTuple[1] = 12;
