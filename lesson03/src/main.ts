@@ -11,3 +11,7 @@ stringArr.push('fogg');
 // we can add only string and numerical datatype to this guitars variable.
 guitars[0] = 1984;
 guitars.unshift('hey');
+
+let test = [];
+let bands: string[] = [];
+bands.push("Souvik Roy")
