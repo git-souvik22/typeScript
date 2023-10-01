@@ -36,3 +36,7 @@ let jp = {
     name: "Developa",
     albums: [1994, "DV"]
 };
+let greetGuitarist = (guitarist) => {
+    return `hello ${guitarist.name}!`;
+};
+console.log(greetGuitarist(jp));
