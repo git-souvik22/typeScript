@@ -27,3 +27,8 @@ const exampleObj = {
 };
 // we cannot assign data types other than 22
 exampleObj.prop2 = 22;
+let evh = {
+    name: "Souvik",
+    active: false,
+    albums: [1984, "Souvik"]
+};

@@ -38,3 +38,15 @@ const exampleObj = {
 
 // we cannot assign data types other than 22
 exampleObj.prop2 = 22;
+
+type Guitarist = {
+    name: string,
+    active: boolean,
+    albums: (string | number)[]
+}
+
+let evh: Guitarist = {
+    name: "Souvik",
+    active: false,
+    albums: [1984, "Souvik"]
+}
