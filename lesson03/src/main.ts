@@ -41,8 +41,8 @@ exampleObj.prop2 = 22;
 
 // custom data type
 interface Guitarist {
-    name: string,
-    active?: boolean,
+    name?: string,
+    active: boolean,
     albums: (string | number)[]
 }
 
@@ -54,11 +54,15 @@ let evh: Guitarist = {
 
 let jp: Guitarist = {
     name: "Developa",
+    active: true,
     albums: [1994, "DV"]
 }
 
 let greetGuitarist = (guitarist: Guitarist) => {
-    return `hello ${guitarist.name}!`
+    if (guitarist.name) {
+        return `hello ${guitarist.name.toUpperCase()}!`
+    }
+    return 'hello Unknown'
 }
 
 console.log(greetGuitarist(jp));
