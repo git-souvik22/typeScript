@@ -32,3 +32,7 @@ let evh = {
     active: false,
     albums: [1984, "SR"]
 };
+let jp = {
+    name: "Developa",
+    albums: [1994, "DV"]
+};
