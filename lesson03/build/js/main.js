@@ -30,5 +30,5 @@ exampleObj.prop2 = 22;
 let evh = {
     name: "Souvik",
     active: false,
-    albums: [1984, "Souvik"]
+    albums: [1984, "SR"]
 };

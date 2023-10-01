@@ -48,5 +48,5 @@ type Guitarist = {
 let evh: Guitarist = {
     name: "Souvik",
     active: false,
-    albums: [1984, "Souvik"]
+    albums: [1984, "SR"]
 }
