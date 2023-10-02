@@ -18,7 +18,7 @@ myTuple[1] = 12;
 // Object
 let myObj;
 myObj = [];
-console.log(typeof myObj);
+// console.log(typeof myObj);
 myObj = bands;
 myObj = {};
 const exampleObj = {
@@ -43,4 +43,14 @@ let greetGuitarist = (guitarist) => {
     }
     return 'hello Unknown';
 };
-console.log(greetGuitarist(jp));
+// console.log(greetGuitarist(jp));
+// enums
+var Grade;
+(function (Grade) {
+    Grade[Grade["U"] = 1] = "U";
+    Grade[Grade["D"] = 2] = "D";
+    Grade[Grade["C"] = 3] = "C";
+    Grade[Grade["B"] = 4] = "B";
+    Grade[Grade["A"] = 5] = "A";
+})(Grade || (Grade = {}));
+console.log(Grade.U);

@@ -27,7 +27,7 @@ myTuple[1] = 12;
 
 let myObj: object;
 myObj = []
-console.log(typeof myObj);
+// console.log(typeof myObj);
 myObj = bands;
 myObj = {}
 
@@ -65,4 +65,16 @@ let greetGuitarist = (guitarist: Guitarist) => {
     return 'hello Unknown'
 }
 
-console.log(greetGuitarist(jp));
+// console.log(greetGuitarist(jp));
+
+// enums
+
+enum Grade {
+    U = 1,
+    D,
+    C,
+    B,
+    A
+}
+
+console.log(Grade.U);
