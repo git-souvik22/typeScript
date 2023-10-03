@@ -28,3 +28,6 @@ const add = (a: number, b: number): number => {
 const logMsg = (message: any): void => {
     console.log(message);
 }
+
+logMsg("hello!")
+logMsg(add(2, 3));

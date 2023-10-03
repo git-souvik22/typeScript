@@ -10,3 +10,5 @@ const add = (a, b) => {
 const logMsg = (message) => {
     console.log(message);
 };
+logMsg("hello!");
+logMsg(add(2, 3));
