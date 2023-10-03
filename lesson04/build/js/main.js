@@ -12,3 +12,9 @@ const logMsg = (message) => {
 };
 logMsg("hello!");
 logMsg(add(2, 3));
+let substract = function (c, d) {
+    return c - d;
+};
+let multiply = (c, d) => {
+    return c * d;
+};

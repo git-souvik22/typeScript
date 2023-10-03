@@ -31,3 +31,13 @@ const logMsg = (message: any): void => {
 
 logMsg("hello!")
 logMsg(add(2, 3));
+
+let substract = function (c: number, d: number): number {
+    return c - d;
+}
+
+type mathFunction = (a: number, b: number) => number;
+
+let multiply: mathFunction = (c, d) => {
+    return c * d;
+}
