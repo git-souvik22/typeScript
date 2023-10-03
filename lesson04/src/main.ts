@@ -46,7 +46,14 @@ logMsg(multiply(2, 2));
 
 // optional parameters 
 
-const addAll = (a: number, b: number, c?: number) => {
+const addAll = (a: number, b: number, c?: number): number => {
+    if (typeof c != "undefined") {
+        return a + b + c;
+    }
+    return a + b;
+}
+
+const sumAll = (a: number, b: number, c: number = 2): number => {
     if (typeof c != "undefined") {
         return a + b + c;
     }
