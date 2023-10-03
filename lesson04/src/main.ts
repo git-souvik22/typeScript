@@ -36,8 +36,10 @@ let substract = function (c: number, d: number): number {
     return c - d;
 }
 
-type mathFunction = (a: number, b: number) => number;
+// type mathFunction = (a: number, b: number) => number;
+interface mathFunction { (a: number, b: number): number }
 
 let multiply: mathFunction = (c, d) => {
     return c * d;
 }
+logMsg(multiply(2, 2));

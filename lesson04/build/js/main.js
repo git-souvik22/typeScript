@@ -18,3 +18,4 @@ let substract = function (c, d) {
 let multiply = (c, d) => {
     return c * d;
 };
+logMsg(multiply(2, 2));
