@@ -27,8 +27,5 @@ const addAll = (a, b, c) => {
     return a + b;
 };
 const sumAll = (a, b, c = 2) => {
-    if (typeof c != "undefined") {
-        return a + b + c;
-    }
-    return a + b;
+    return a + b + c;
 };

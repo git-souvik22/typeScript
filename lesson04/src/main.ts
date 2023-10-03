@@ -54,8 +54,5 @@ const addAll = (a: number, b: number, c?: number): number => {
 }
 
 const sumAll = (a: number, b: number, c: number = 2): number => {
-    if (typeof c != "undefined") {
-        return a + b + c;
-    }
-    return a + b;
+    return a + b + c;
 }
