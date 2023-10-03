@@ -10,15 +10,15 @@ const add = (a, b) => {
 const logMsg = (message) => {
     console.log(message);
 };
-logMsg("hello!");
-logMsg(add(2, 3));
+// logMsg("hello!")
+// logMsg(add(2, 3));
 let substract = function (c, d) {
     return c - d;
 };
 let multiply = (c, d) => {
     return c * d;
 };
-logMsg(multiply(2, 2));
+// logMsg(multiply(2, 2));
 // optional parameters 
 const addAll = (a, b, c) => {
     if (typeof c != "undefined") {
@@ -26,6 +26,10 @@ const addAll = (a, b, c) => {
     }
     return a + b;
 };
-const sumAll = (a, b, c = 2) => {
+const sumAll = (a = 10, b, c = 2) => {
     return a + b + c;
 };
+logMsg(addAll(2, 2, 4));
+logMsg(addAll(2, 4));
+logMsg(sumAll(2, 4));
+logMsg(sumAll(undefined, 4));
