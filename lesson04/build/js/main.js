@@ -39,8 +39,8 @@ const total = (...nums) => {
 };
 // logMsg(total(1, 2, 3, 4));
 // function definition
-function sum(a, b) {
+const sum = (a, b) => {
     return a + b;
-}
+};
 // function call
 console.log(sum(5, 10));

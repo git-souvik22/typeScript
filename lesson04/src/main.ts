@@ -72,7 +72,7 @@ const total = (...nums: number[]): number => {
 // logMsg(total(1, 2, 3, 4));
 
 // function definition
-function sum(a: number, b: number): number {
+const sum = (a: number, b: number): number => {
     return a + b;
 }
 
