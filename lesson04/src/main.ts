@@ -58,10 +58,10 @@ const sumAll = (a: number = 10, b: number, c: number = 2): number => {
 }
 
 
-logMsg(addAll(2, 2, 4));
-logMsg(addAll(2, 4));
-logMsg(sumAll(2, 4));
-logMsg(sumAll(undefined, 4));
+// logMsg(addAll(2, 2, 4));
+// logMsg(addAll(2, 4));
+// logMsg(sumAll(2, 4));
+// logMsg(sumAll(undefined, 4));
 
 // Rest Parameter
 
@@ -69,4 +69,12 @@ const total = (...nums: number[]): number => {
     return nums.reduce((prev, curr) => prev + curr);
 }
 
-logMsg(total(1, 2, 3, 4))
+// logMsg(total(1, 2, 3, 4));
+
+// function definition
+function sum(a: number, b: number) {
+    return a + b;
+}
+
+// function call
+console.log(sum(5, 10));

@@ -29,12 +29,18 @@ const addAll = (a, b, c) => {
 const sumAll = (a = 10, b, c = 2) => {
     return a + b + c;
 };
-logMsg(addAll(2, 2, 4));
-logMsg(addAll(2, 4));
-logMsg(sumAll(2, 4));
-logMsg(sumAll(undefined, 4));
+// logMsg(addAll(2, 2, 4));
+// logMsg(addAll(2, 4));
+// logMsg(sumAll(2, 4));
+// logMsg(sumAll(undefined, 4));
 // Rest Parameter
 const total = (...nums) => {
     return nums.reduce((prev, curr) => prev + curr);
 };
-logMsg(total(1, 2, 3, 4));
+// logMsg(total(1, 2, 3, 4));
+// function definition
+function sum(a, b) {
+    return a + b;
+}
+// function call
+console.log(sum(5, 10));
