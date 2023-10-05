@@ -22,8 +22,8 @@ let shortText: string = longText.slice(0, 10);
 let str1: string = "Lorem ipsum dolor sit amet consectetur";
 let str2: string = "hic vitae laudantium ex quod nihil quasi quaerat!";
 
-let areEqual: boolean = str1.includes(str2);
-// console.log(areEqual);
+let areEqual: boolean = str1 === str2;
+console.log(areEqual);
 
 let product: string = "Shirt";
 let price: number = 500;
