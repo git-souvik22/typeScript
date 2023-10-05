@@ -22,4 +22,8 @@ console.log(`The product ${product} is priced at ${price} dollars.`);
 function isEven(numb) {
     return numb % 2 === 0;
 }
-console.log(isEven(4));
+// console.log(isEven(4));
+function isDivisibleBy4and8(num) {
+    return num % 4 === 0 && num % 8 === 0;
+}
+console.log(isDivisibleBy4and8(8));
