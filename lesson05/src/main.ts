@@ -42,4 +42,8 @@ function isDivisibleBy4and8(num: number): boolean {
 // console.log(isDivisibleBy4and8(8));
 
 let maxNumber: bigint = 9007199254740991n;
-console.log(maxNumber)
+// console.log(maxNumber)
+
+let anotherNumber = BigInt("90071992547409915");
+console.log(anotherNumber);
+
