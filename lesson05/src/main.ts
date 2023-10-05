@@ -16,11 +16,16 @@ let lowerCaseText: string = text.toLowerCase();
 let longText: string = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae soluta error nisi ipsa, quia adipisci corporis assumenda, veniam sunt fugit sint ratione, hic vitae laudantium ex quod nihil quasi quaerat!";
 
 let shortText: string = longText.slice(0, 10);
-console.log(shortText);
+// console.log(shortText);
 
 
 let str1: string = "Lorem ipsum dolor sit amet consectetur";
 let str2: string = "hic vitae laudantium ex quod nihil quasi quaerat!";
 
 let areEqual: boolean = str1.includes(str2);
-console.log(areEqual);
+// console.log(areEqual);
+
+let product: string = "Shirt";
+let price: number = 500;
+
+console.log(`The product ${product} is priced at ${price} dollars.`);
