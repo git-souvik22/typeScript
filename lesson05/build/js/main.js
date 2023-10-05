@@ -12,3 +12,7 @@ let lowerCaseText = text.toLowerCase();
 let longText = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae soluta error nisi ipsa, quia adipisci corporis assumenda, veniam sunt fugit sint ratione, hic vitae laudantium ex quod nihil quasi quaerat!";
 let shortText = longText.slice(0, 10);
 console.log(shortText);
+let str1 = "Lorem ipsum dolor sit amet consectetur";
+let str2 = "hic vitae laudantium ex quod nihil quasi quaerat!";
+let areEqual = str1.includes(str2);
+console.log(areEqual);
