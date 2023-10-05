@@ -15,10 +15,10 @@ let shortText = longText.slice(0, 10);
 let str1 = "Lorem ipsum dolor sit amet consectetur";
 let str2 = "hic vitae laudantium ex quod nihil quasi quaerat!";
 let areEqual = str1 === str2;
-console.log(areEqual);
+// console.log(areEqual);
 let product = "Shirt";
 let price = 500;
-console.log(`The product ${product} is priced at ${price} dollars.`);
+// console.log(`The product ${product} is priced at ${price} dollars.`);
 function isEven(numb) {
     return numb % 2 === 0;
 }
@@ -26,4 +26,6 @@ function isEven(numb) {
 function isDivisibleBy4and8(num) {
     return num % 4 === 0 && num % 8 === 0;
 }
-console.log(isDivisibleBy4and8(8));
+// console.log(isDivisibleBy4and8(8));
+let maxNumber = 9007199254740991n;
+console.log(maxNumber);

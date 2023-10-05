@@ -23,12 +23,12 @@ let str1: string = "Lorem ipsum dolor sit amet consectetur";
 let str2: string = "hic vitae laudantium ex quod nihil quasi quaerat!";
 
 let areEqual: boolean = str1 === str2;
-console.log(areEqual);
+// console.log(areEqual);
 
 let product: string = "Shirt";
 let price: number = 500;
 
-console.log(`The product ${product} is priced at ${price} dollars.`);
+// console.log(`The product ${product} is priced at ${price} dollars.`);
 
 function isEven(numb: number): boolean {
     return numb % 2 === 0
@@ -39,4 +39,7 @@ function isDivisibleBy4and8(num: number): boolean {
     return num % 4 === 0 && num % 8 === 0;
 }
 
-console.log(isDivisibleBy4and8(8));
+// console.log(isDivisibleBy4and8(8));
+
+let maxNumber: bigint = 9007199254740991n;
+console.log(maxNumber)
