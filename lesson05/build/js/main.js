@@ -6,6 +6,9 @@ myFullName = myFirstName + myLastName;
 // console.log(myFullName)
 let text = "Hi I'm a Mern developer";
 let upperCaseText = text.toUpperCase();
-console.log(upperCaseText);
+// console.log(upperCaseText);
 let lowerCaseText = text.toLowerCase();
-console.log(lowerCaseText);
+// console.log(lowerCaseText);
+let longText = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae soluta error nisi ipsa, quia adipisci corporis assumenda, veniam sunt fugit sint ratione, hic vitae laudantium ex quod nihil quasi quaerat!";
+let shortText = longText.slice(0, 10);
+console.log(shortText);
