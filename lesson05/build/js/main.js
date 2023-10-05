@@ -19,3 +19,7 @@ console.log(areEqual);
 let product = "Shirt";
 let price = 500;
 console.log(`The product ${product} is priced at ${price} dollars.`);
+function isEven(numb) {
+    return numb % 2 === 0;
+}
+console.log(isEven(4));

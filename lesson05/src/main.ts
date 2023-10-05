@@ -29,3 +29,8 @@ let product: string = "Shirt";
 let price: number = 500;
 
 console.log(`The product ${product} is priced at ${price} dollars.`);
+
+function isEven(numb: number): boolean {
+    return numb % 2 === 0
+}
+console.log(isEven(4));
