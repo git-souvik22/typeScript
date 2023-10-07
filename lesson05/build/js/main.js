@@ -31,3 +31,5 @@ let maxNumber = 9007199254740991n;
 // console.log(maxNumber)
 let anotherNumber = BigInt("90071992547409915");
 console.log(anotherNumber);
+let myfavNumber = 2;
+myfavNumber = "SR";
