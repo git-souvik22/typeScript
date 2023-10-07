@@ -49,5 +49,16 @@ console.log(anotherNumber);
 
 
 let myfavNumber: any = 2;
-myfavNumber = "SR"
+myfavNumber = "SR";
+myfavNumber = true
 
+let myFavNumber: unknown;
+myFavNumber = 2;
+myFavNumber = "Souvik"
+myFavNumber = true
+
+if (typeof myFavNumber === "number") {
+    console.log(myfavNumber + 8);
+} else if (typeof myFavNumber === "boolean") {
+    console.log(myFavNumber);
+}

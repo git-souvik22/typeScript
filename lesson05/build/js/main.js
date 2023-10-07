@@ -33,3 +33,14 @@ let anotherNumber = BigInt("90071992547409915");
 console.log(anotherNumber);
 let myfavNumber = 2;
 myfavNumber = "SR";
+myfavNumber = true;
+let myFavNumber;
+myFavNumber = 2;
+myFavNumber = "Souvik";
+myFavNumber = true;
+if (typeof myFavNumber === "number") {
+    console.log(myfavNumber + 8);
+}
+else if (typeof myFavNumber === "boolean") {
+    console.log(myFavNumber);
+}
