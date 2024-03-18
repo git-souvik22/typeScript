@@ -1,9 +1,7 @@
-let username = "Souvik";
-console.log(username);
+function tsFunc(par1: number) {
+    return par1 + 1;
+}
 
-let a: number = 12;
-let b: number = 6;
-let c: number = 2;
+const res = tsFunc(3);
 
-console.log(a / b);
-console.log(c * b);
+console.log(res);
