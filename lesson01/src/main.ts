@@ -13,8 +13,11 @@
 // const response = addone(5);
 // console.log(response);
 
-function printMessage(message: string): void {
-    console.log(`This is my ${message}`);
-};
+// function printMessage(message: string): void {
+//     console.log(`This is my ${message}`);
+// };
 
-printMessage("text");
+// printMessage("text");
+
+const numbs: any[] = [1, 2, true, "souvik"];
+console.log(numbs);

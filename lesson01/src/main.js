@@ -7,8 +7,9 @@
 // const addone = (num: number) => num + 1;
 // const response = addone(5);
 // console.log(response);
-function printMessage(message) {
-    console.log("This is my ".concat(message));
-}
-;
-printMessage("text");
+// function printMessage(message: string): void {
+//     console.log(`This is my ${message}`);
+// };
+// printMessage("text");
+var numbs = [1, 2, true, "souvik"];
+console.log(numbs);
