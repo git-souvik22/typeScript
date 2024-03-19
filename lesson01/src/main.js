@@ -6,4 +6,5 @@ var WeatherConditions;
     WeatherConditions["Snowy"] = "snowy";
 })(WeatherConditions || (WeatherConditions = {}));
 ;
-console.log(WeatherConditions.Rainy);
+var currentWeather = WeatherConditions.Cloudy;
+console.log("The current weather is : ".concat(currentWeather));

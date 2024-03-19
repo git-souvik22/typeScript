@@ -5,4 +5,6 @@ enum WeatherConditions {
     Snowy = "snowy",
 };
 
-console.log(WeatherConditions.Rainy);
+const currentWeather = WeatherConditions.Cloudy;
+
+console.log(`The current weather is : ${currentWeather}`);
