@@ -1,6 +1,9 @@
-// let myTuple: [string, number] = ["souvik", 22];
-// let [first, second] = myTuple;
-// console.log(first)
-// console.log(second);
-var games = ["souvik", 22, true];
-console.log(games);
+var WeatherConditions;
+(function (WeatherConditions) {
+    WeatherConditions["Sunny"] = "sunny";
+    WeatherConditions["Cloudy"] = "cloudy";
+    WeatherConditions["Rainy"] = "rainy";
+    WeatherConditions["Snowy"] = "snowy";
+})(WeatherConditions || (WeatherConditions = {}));
+;
+console.log(WeatherConditions.Rainy);

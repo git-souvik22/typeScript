@@ -1,9 +1,8 @@
-// let myTuple: [string, number] = ["souvik", 22];
+enum WeatherConditions {
+    Sunny = "sunny",
+    Cloudy = "cloudy",
+    Rainy = "rainy",
+    Snowy = "snowy",
+};
 
-// let [first, second] = myTuple;
-
-// console.log(first)
-// console.log(second);
-
-const games: [string, number, boolean] = ["souvik", 22, true];
-console.log(games);
+console.log(WeatherConditions.Rainy);
