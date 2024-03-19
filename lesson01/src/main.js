@@ -14,9 +14,10 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 var Person = /** @class */ (function () {
-    function Person(first, last) {
+    function Person(first, last, age) {
         this.first = first;
         this.last = last;
+        this.age = age;
     }
     Person.prototype.getName = function () {
         return "Name: ".concat(this.first, " ").concat(this.last, ", Age: ").concat(this.age);
@@ -26,9 +27,7 @@ var Person = /** @class */ (function () {
 var Human = /** @class */ (function (_super) {
     __extends(Human, _super);
     function Human(first, last, age) {
-        var _this = _super.call(this, first, last) || this;
-        _this.age = age;
-        return _this;
+        return _super.call(this, first, last, age) || this;
     }
     return Human;
 }(Person));

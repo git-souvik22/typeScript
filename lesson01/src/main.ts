@@ -3,9 +3,10 @@ class Person {
     private last: string;
     protected age: number
 
-    constructor(first: string, last: string) {
+    constructor(first: string, last: string, age: number) {
         this.first = first;
         this.last = last;
+        this.age = age;
     }
 
     getName(): string {
@@ -15,8 +16,7 @@ class Person {
 
 class Human extends Person {
     constructor(first: string, last: string, age: number) {
-        super(first, last);
-        this.age = age;
+        super(first, last, age);
     }
 }
 
