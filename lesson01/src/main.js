@@ -1,8 +1,7 @@
-var souvik = {
-    first: "Souvik",
-    last: "Roy",
-    age: 22,
+var password = 22;
+var user = {
     email: "souvik@gmail.com",
-    password: "123456789"
+    password: "1234567898"
 };
-console.log("Name: ".concat(souvik.first, " ").concat(souvik.last, ", Age: ").concat(souvik.age, ", Email: ").concat(souvik.email, ", Password: ").concat(souvik.password));
+var items = [1, 2, 3, 4, 5, 6, "souvik"];
+console.log(items);

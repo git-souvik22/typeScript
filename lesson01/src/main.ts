@@ -1,22 +1,20 @@
+const password: string | number = 22;
+
 type UserInfo = {
     first: string,
     last: string,
-    age: number,
-};
+    age: number
+}
 
 type AccountDetails = {
     email: string,
-    password: string,
+    password: string
 }
 
-type User = UserInfo & AccountDetails;
-
-const souvik: User = {
-    first: "Souvik",
-    last: "Roy",
-    age: 22,
+const user: UserInfo | AccountDetails = {
     email: "souvik@gmail.com",
-    password: "123456789"
-};
+    password: "1234567898"
+}
 
-console.log(`Name: ${souvik.first} ${souvik.last}, Age: ${souvik.age}, Email: ${souvik.email}, Password: ${souvik.password}`);
+const items: (number | string)[] = [1, 2, 3, 4, 5, 6, "souvik"]
+console.log(items)
