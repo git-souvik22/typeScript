@@ -1,24 +1,19 @@
-class Person {
-    private first: string;
-    private last: string;
-    protected age: number
+class myClass {
+    private _myproperty: number = 0;
 
-    constructor(first: string, last: string, age: number) {
-        this.first = first;
-        this.last = last;
-        this.age = age;
-    }
+    get myproperty(): number {
+        return this._myproperty;
+    };
 
-    getName(): string {
-        return `Name: ${this.first} ${this.last}, Age: ${this.age}`
+    set myproperty(value: number) {
+        this._myproperty = value;
     }
 }
 
-class Human extends Person {
-    constructor(first: string, last: string, age: number) {
-        super(first, last, age);
-    }
-}
+const myInstance = new myClass();
 
-const souvik = new Human("Souvik", "Roy", 22);
-console.log(souvik);
+console.log(`Current value is: ${myInstance.myproperty}`);
+
+myInstance.myproperty = 10;
+
+console.log(`Current value is: ${myInstance.myproperty}`);
