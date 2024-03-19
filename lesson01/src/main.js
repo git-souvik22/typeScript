@@ -1,10 +1,10 @@
-var WeatherConditions;
-(function (WeatherConditions) {
-    WeatherConditions["Sunny"] = "sunny";
-    WeatherConditions["Cloudy"] = "cloudy";
-    WeatherConditions["Rainy"] = "rainy";
-    WeatherConditions["Snowy"] = "snowy";
-})(WeatherConditions || (WeatherConditions = {}));
-;
-var currentWeather = WeatherConditions.Cloudy;
-console.log("The current weather is : ".concat(currentWeather));
+var Person = /** @class */ (function () {
+    function Person(first, last) {
+        this.first = first;
+        this.last = last;
+    }
+    return Person;
+}());
+var person1 = new Person("John", "Doe");
+console.log(person1.first);
+console.log(person1.last);

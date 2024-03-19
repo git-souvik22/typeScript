@@ -1,10 +1,13 @@
-enum WeatherConditions {
-    Sunny = "sunny",
-    Cloudy = "cloudy",
-    Rainy = "rainy",
-    Snowy = "snowy",
-};
+class Person {
+    public first: string;
+    public last: string
 
-const currentWeather = WeatherConditions.Cloudy;
+    constructor(first: string, last: string) {
+        this.first = first;
+        this.last = last
+    }
+}
 
-console.log(`The current weather is : ${currentWeather}`);
+const person1 = new Person("John", "Doe");
+console.log(person1.first);
+console.log(person1.last);
