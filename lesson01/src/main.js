@@ -1,15 +1,8 @@
 // function tsFunc(par1: number) {
 //     return par1 + 1;
 // }
-// const res = tsFunc(3);
-// console.log(res);
-// arrow function
-// const addone = (num: number) => num + 1;
-// const response = addone(5);
-// console.log(response);
-// function printMessage(message: string): void {
-//     console.log(`This is my ${message}`);
-// };
-// printMessage("text");
-var numbs = [1, 2, true, "souvik"];
-console.log(numbs);
+var printUser = function (user) {
+    return "Name: ".concat(user.name, ", Age: ").concat(user.age, ", Location: ").concat(user.location);
+};
+var res = printUser({ name: "Souvik", age: 22, location: "Krishnagar" });
+console.log(res);

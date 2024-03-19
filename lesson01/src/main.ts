@@ -19,5 +19,19 @@
 
 // printMessage("text");
 
-const numbs: any[] = [1, 2, true, "souvik"];
-console.log(numbs);
+// const numbs: any[] = [1, 2, true, "souvik"];
+// console.log(numbs);
+
+type User = {
+    name: string;
+    age: number;
+    location: string
+}
+
+const printUser = (user: User) => {
+    return `Name: ${user.name}, Age: ${user.age}, Location: ${user.location}`;
+};
+
+const res = printUser({ name: "Souvik", age: 22, location: "Krishnagar" });
+
+console.log(res);
