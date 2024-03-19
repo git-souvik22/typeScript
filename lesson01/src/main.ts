@@ -1,12 +1,22 @@
-type User = {
-    name: string;
-    age: number;
-    email?: string
+type UserInfo = {
+    first: string,
+    last: string,
+    age: number,
 };
 
-const user: User = {
-    name: "Souvik Roy",
-    age: 22,
+type AccountDetails = {
+    email: string,
+    password: string,
 }
 
-console.log(`Name: ${user.name}, Age: ${user.age}, Email: ${user.email}`);
+type User = UserInfo & AccountDetails;
+
+const souvik: User = {
+    first: "Souvik",
+    last: "Roy",
+    age: 22,
+    email: "souvik@gmail.com",
+    password: "123456789"
+};
+
+console.log(`Name: ${souvik.first} ${souvik.last}, Age: ${souvik.age}, Email: ${souvik.email}, Password: ${souvik.password}`);
