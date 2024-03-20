@@ -1,20 +1,8 @@
-var myClass = /** @class */ (function () {
-    function myClass() {
-        this._myProperty = 0;
-    }
-    Object.defineProperty(myClass.prototype, "myProperty", {
-        get: function () {
-            return this._myProperty;
-        },
-        set: function (value) {
-            this._myProperty = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    return myClass;
-}());
-var myInstance = new myClass();
-console.log("Current value is: ".concat(myInstance.myProperty));
-myInstance.myProperty = 10;
-console.log("Current value is: ".concat(myInstance.myProperty));
+var computerInterface = {
+    name: "Asus Zenfone 15",
+    ram: 12,
+    hdd: 256,
+};
+console.log(computerInterface.name);
+console.log(computerInterface.ram);
+console.log(computerInterface.hdd);

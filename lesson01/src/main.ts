@@ -1,19 +1,15 @@
-class myClass {
-    private _myProperty: number = 0;
-
-    get myProperty(): number {
-        return this._myProperty;
-    }
-
-    set myProperty(value: number) {
-        this._myProperty = value;
-    }
+interface Computer {
+    name: string,
+    ram: number,
+    hdd: number,
 }
 
-const myInstance = new myClass();
+const computerInterface: Computer = {
+    name: "Asus Zenfone 15",
+    ram: 12,
+    hdd: 256,
+}
 
-console.log(`Current value is: ${myInstance.myProperty}`);
-
-myInstance.myProperty = 10;
-
-console.log(`Current value is: ${myInstance.myProperty}`);
+console.log(computerInterface.name);
+console.log(computerInterface.ram);
+console.log(computerInterface.hdd);
