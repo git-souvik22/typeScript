@@ -1,13 +1,6 @@
-interface Movie {
-    readonly name: string,
-    ratings: number,
-    genra?: string
+interface MathOperation {
+    (x: number, y: number): number
 }
 
-const movie1: Movie = {
-    name: "Star Wars",
-    ratings: 8.9,
-    genra: "Action"
-}
-
-console.log(movie1);
+const add: MathOperation = (a, b) => a + b;
+console.log(add(2, 2));
