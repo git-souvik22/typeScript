@@ -1,6 +1,9 @@
 interface MathOperation {
-    (x: number, y: number): number
+    (x: number, y: number): number;
 }
 
 const add: MathOperation = (a, b) => a + b;
-console.log(add(2, 2));
+const substract: MathOperation = (a, b) => a - b;
+
+console.log(add(2, 5));
+console.log(substract(10, 7));
