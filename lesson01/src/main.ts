@@ -1,15 +1,13 @@
-interface Computer {
-    name: string,
-    ram: number,
-    hdd: number,
+interface Movie {
+    readonly name: string,
+    ratings: number,
+    genra?: string
 }
 
-const computerInterface: Computer = {
-    name: "Asus Zenfone 15",
-    ram: 12,
-    hdd: 256,
+const movie1: Movie = {
+    name: "Star Wars",
+    ratings: 8.9,
+    genra: "Action"
 }
 
-console.log(computerInterface.name);
-console.log(computerInterface.ram);
-console.log(computerInterface.hdd);
+console.log(movie1);

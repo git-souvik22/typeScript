@@ -1,8 +1,6 @@
-var computerInterface = {
-    name: "Asus Zenfone 15",
-    ram: 12,
-    hdd: 256,
+var movie1 = {
+    name: "Star Wars",
+    ratings: 8.9,
+    genra: "Action"
 };
-console.log(computerInterface.name);
-console.log(computerInterface.ram);
-console.log(computerInterface.hdd);
+console.log(movie1);
