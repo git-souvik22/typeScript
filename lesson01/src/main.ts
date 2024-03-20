@@ -1,19 +1,19 @@
 class myClass {
-    private _myproperty: number = 0;
+    private _myProperty: number = 0;
 
-    get myproperty(): number {
-        return this._myproperty;
-    };
+    get myProperty(): number {
+        return this._myProperty;
+    }
 
-    set myproperty(value: number) {
-        this._myproperty = value;
+    set myProperty(value: number) {
+        this._myProperty = value;
     }
 }
 
 const myInstance = new myClass();
 
-console.log(`Current value is: ${myInstance.myproperty}`);
+console.log(`Current value is: ${myInstance.myProperty}`);
 
-myInstance.myproperty = 10;
+myInstance.myProperty = 10;
 
-console.log(`Current value is: ${myInstance.myproperty}`);
+console.log(`Current value is: ${myInstance.myProperty}`);

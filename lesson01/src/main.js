@@ -1,21 +1,20 @@
 var myClass = /** @class */ (function () {
     function myClass() {
-        this._myproperty = 0;
+        this._myProperty = 0;
     }
-    Object.defineProperty(myClass.prototype, "myproperty", {
+    Object.defineProperty(myClass.prototype, "myProperty", {
         get: function () {
-            return this._myproperty;
+            return this._myProperty;
         },
         set: function (value) {
-            this._myproperty = value;
+            this._myProperty = value;
         },
         enumerable: false,
         configurable: true
     });
-    ;
     return myClass;
 }());
 var myInstance = new myClass();
-console.log("Current value is: ".concat(myInstance.myproperty));
-myInstance.myproperty = 10;
-console.log("Current value is: ".concat(myInstance.myproperty));
+console.log("Current value is: ".concat(myInstance.myProperty));
+myInstance.myProperty = 10;
+console.log("Current value is: ".concat(myInstance.myProperty));
