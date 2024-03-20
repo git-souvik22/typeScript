@@ -1,9 +1,32 @@
-interface MathOperation {
-    (x: number, y: number): number;
+interface Person {
+    firstName: string,
+    lastName: string,
+    age: number,
+    sayHello(): void
 }
 
-const add: MathOperation = (a, b) => a + b;
-const substract: MathOperation = (a, b) => a - b;
+function greet(person: Person) {
+    console.log(`Hello, ${person.firstName} ${person.lastName}`);
+    person.sayHello();
+};
 
-console.log(add(2, 5));
-console.log(substract(10, 7));
+const john: Person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 20,
+    sayHello() {
+        console.log("Hi There!");
+    },
+}
+
+const souvik: Person = {
+    firstName: "Souvik",
+    lastName: "Roy",
+    age: 22,
+    sayHello() {
+        console.log("Web Developer");
+    },
+}
+
+greet(john);
+greet(souvik);
