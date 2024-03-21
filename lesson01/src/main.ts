@@ -24,5 +24,7 @@ function uniqueDataTypesFunc<Type>(item: Type, defaultValue: Type): [Type, Type]
 
 const num = uniqueDataTypesFunc<number>(10, 20);
 const str = uniqueDataTypesFunc<string>("Hello", "World");
+const bool = uniqueDataTypesFunc<boolean>(true, false);
 console.log(num);
 console.log(str);
+console.log(bool);

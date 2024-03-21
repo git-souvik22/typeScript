@@ -20,5 +20,7 @@ function uniqueDataTypesFunc(item, defaultValue) {
 ;
 var num = uniqueDataTypesFunc(10, 20);
 var str = uniqueDataTypesFunc("Hello", "World");
+var bool = uniqueDataTypesFunc(true, false);
 console.log(num);
 console.log(str);
+console.log(bool);
