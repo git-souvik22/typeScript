@@ -1,12 +1,5 @@
-var myCar = {
-    brand: "BMW",
-    model: "M3",
-    start: function () {
-        console.log("Start");
-    },
-    stop: function () {
-        console.log("Stop");
-    }
-};
-myCar.start();
-myCar.stop();
+function printNumber(item, defaultValue) {
+    return [item, defaultValue];
+}
+var num = printNumber(12, 20);
+console.log(num);

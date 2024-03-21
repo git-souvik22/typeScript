@@ -1,25 +1,7 @@
-// Original Interface
-interface Car {
-    brand: string;
-    start(): void;
+function printNumber(item: number, defaultValue: number): [number, number] {
+    return [item, defaultValue];
 }
 
-// Declaration Merging (interface extension)
-interface Car {
-    model: string;
-    stop(): void;
-}
+const num = printNumber(12, 20);
 
-const myCar: Car = {
-    brand: "BMW",
-    model: "M3",
-    start() {
-        console.log("Start");
-    },
-    stop() {
-        console.log("Stop");
-    }
-}
-
-myCar.start();
-myCar.stop();
+console.log(num);
