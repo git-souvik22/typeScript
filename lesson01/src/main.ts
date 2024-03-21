@@ -1,32 +1,15 @@
-interface Person {
-    firstName: string,
-    lastName: string,
-    age: number,
-    sayHello(): void,
+interface Song {
+    songName: string,
+    singerName: string,
+    printSongInfo(songName: string, singerName: string): string,
 }
 
-function greet(person: Person) {
-    console.log(`Hello, ${person.firstName} ${person.lastName}`);
-    person.sayHello();
-}
-
-const john: Person = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 20,
-    sayHello() {
-        console.log(`Hi There`);
+const song1: Song = {
+    songName: "Chanda Mere Aa",
+    singerName: "Arijit Singh",
+    printSongInfo: (songName, singerName) => {
+        return `Song: ${songName}, Singer: ${singerName}`;
     }
-}
+};
 
-const souvik: Person = {
-    firstName: "Souvik",
-    lastName: "Roy",
-    age: 22,
-    sayHello() {
-        console.log("Web3 Developer");
-    }
-}
-
-greet(john);
-greet(souvik);
+console.log(song1.printSongInfo("Chanda Mere Aa", "Arijit Singh"));

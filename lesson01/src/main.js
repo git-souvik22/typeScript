@@ -1,22 +1,8 @@
-function greet(person) {
-    console.log("Hello, ".concat(person.firstName, " ").concat(person.lastName));
-    person.sayHello();
-}
-var john = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 20,
-    sayHello: function () {
-        console.log("Hi There");
+var song1 = {
+    songName: "Chanda Mere Aa",
+    singerName: "Arijit Singh",
+    printSongInfo: function (songName, singerName) {
+        return "Song: ".concat(songName, ", Singer: ").concat(singerName);
     }
 };
-var souvik = {
-    firstName: "Souvik",
-    lastName: "Roy",
-    age: 22,
-    sayHello: function () {
-        console.log("Web3 Developer");
-    }
-};
-greet(john);
-greet(souvik);
+console.log(song1.printSongInfo("Chanda Mere Aa", "Arijit Singh"));
