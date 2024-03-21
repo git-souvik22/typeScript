@@ -1,18 +1,25 @@
-interface Vehicle {
-    start(): void,
-    stop(): void,
+// Original Interface
+interface Car {
+    brand: string;
+    start(): void;
 }
 
-class Car implements Vehicle {
-    start(): void {
-        console.log("Car has started...");
-    };
-    stop(): void {
-        console.log("Car has stopped");
+// Declaration Merging (interface extension)
+interface Car {
+    model: string;
+    stop(): void;
+}
+
+const myCar: Car = {
+    brand: "BMW",
+    model: "M3",
+    start() {
+        console.log("Start");
+    },
+    stop() {
+        console.log("Stop");
     }
 }
-
-const myCar = new Car;
 
 myCar.start();
 myCar.stop();

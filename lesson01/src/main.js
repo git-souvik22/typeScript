@@ -1,15 +1,12 @@
-var Car = /** @class */ (function () {
-    function Car() {
+var myCar = {
+    brand: "BMW",
+    model: "M3",
+    start: function () {
+        console.log("Start");
+    },
+    stop: function () {
+        console.log("Stop");
     }
-    Car.prototype.start = function () {
-        console.log("Car has started...");
-    };
-    ;
-    Car.prototype.stop = function () {
-        console.log("Car has stopped");
-    };
-    return Car;
-}());
-var myCar = new Car;
+};
 myCar.start();
 myCar.stop();
