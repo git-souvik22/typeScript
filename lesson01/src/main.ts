@@ -1,15 +1,20 @@
-interface Song {
-    songName: string,
-    singerName: string,
-    printSongInfo(songName: string, singerName: string): string,
+interface MovieDetails {
+    readonly name: string,
+    ratings: number,
+    printMovieInfo(name: string, price: number, ratings: number): string | number;
 }
 
-const song1: Song = {
-    songName: "Chanda Mere Aa",
-    singerName: "Arijit Singh",
-    printSongInfo: (songName, singerName) => {
-        return `Song: ${songName}, Singer: ${singerName}`;
+interface MovieGenra extends MovieDetails {
+    genra: string,
+}
+
+const movie1: MovieGenra = {
+    name: "Animal",
+    ratings: 8.9,
+    genra: "Action",
+    printMovieInfo: (name: string, price: number, ratings: number) => {
+        return `Movie Name: ${name}, Price: ${price}, Ratings: ${ratings}`;
     }
 };
 
-console.log(song1.printSongInfo("Chanda Mere Aa", "Arijit Singh"));
+console.log(movie1.printMovieInfo("Animal", 500, 8.8));

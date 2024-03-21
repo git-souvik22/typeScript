@@ -1,8 +1,9 @@
-var song1 = {
-    songName: "Chanda Mere Aa",
-    singerName: "Arijit Singh",
-    printSongInfo: function (songName, singerName) {
-        return "Song: ".concat(songName, ", Singer: ").concat(singerName);
+var movie1 = {
+    name: "Animal",
+    ratings: 8.9,
+    genra: "Action",
+    printMovieInfo: function (name, price, ratings) {
+        return "Movie Name: ".concat(name, ", Price: ").concat(price, ", Ratings: ").concat(ratings);
     }
 };
-console.log(song1.printSongInfo("Chanda Mere Aa", "Arijit Singh"));
+console.log(movie1.printMovieInfo("Animal", 500, 8.8));
