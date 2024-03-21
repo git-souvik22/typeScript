@@ -1,20 +1,18 @@
-interface MovieDetails {
-    readonly name: string,
-    ratings: number,
-    printMovieInfo(name: string, price: number, ratings: number): string | number;
+interface Vehicle {
+    start(): void,
+    stop(): void,
 }
 
-interface MovieGenra extends MovieDetails {
-    genra: string,
-}
-
-const movie1: MovieGenra = {
-    name: "Animal",
-    ratings: 8.9,
-    genra: "Action",
-    printMovieInfo: (name: string, price: number, ratings: number) => {
-        return `Movie Name: ${name}, Price: ${price}, Ratings: ${ratings}`;
+class Car implements Vehicle {
+    start(): void {
+        console.log("Car has started...");
+    };
+    stop(): void {
+        console.log("Car has stopped");
     }
-};
+}
 
-console.log(movie1.printMovieInfo("Animal", 500, 8.8));
+const myCar = new Car;
+
+myCar.start();
+myCar.stop();

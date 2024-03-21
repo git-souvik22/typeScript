@@ -1,9 +1,15 @@
-var movie1 = {
-    name: "Animal",
-    ratings: 8.9,
-    genra: "Action",
-    printMovieInfo: function (name, price, ratings) {
-        return "Movie Name: ".concat(name, ", Price: ").concat(price, ", Ratings: ").concat(ratings);
+var Car = /** @class */ (function () {
+    function Car() {
     }
-};
-console.log(movie1.printMovieInfo("Animal", 500, 8.8));
+    Car.prototype.start = function () {
+        console.log("Car has started...");
+    };
+    ;
+    Car.prototype.stop = function () {
+        console.log("Car has stopped");
+    };
+    return Car;
+}());
+var myCar = new Car;
+myCar.start();
+myCar.stop();
