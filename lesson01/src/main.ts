@@ -1,30 +1,14 @@
-// function printNumber(item: number, defaultValue: number): [number, number] {
-//     return [item, defaultValue];
-// }
-
-// function printString(item: string, defaultValue: string): [string, string] {
-//     return [item, defaultValue];
-// }
-
-// function printBoolean(item: boolean, defaultValue: boolean): [boolean, boolean] {
-//     return [item, defaultValue];
-// }
-
-// const num = printNumber(12, 20);
-// const str = printString("Hello", "World");
-// const bool = printBoolean(true, false);
-// console.log(num);
-// console.log(str);
-// console.log(bool);
 
 // ---------------------------------------------------------------
 function uniqueDataTypesFunc<Type>(item: Type, defaultValue: Type): [Type, Type] {
     return [item, defaultValue];
 };
 
-const num = uniqueDataTypesFunc<number>(10, 20);
-const str = uniqueDataTypesFunc<string>("Hello", "World");
-const bool = uniqueDataTypesFunc<boolean>(true, false);
-console.log(num);
-console.log(str);
-console.log(bool);
+interface Dog {
+    name: string,
+    breed: string,
+}
+
+const dog1 = uniqueDataTypesFunc<Dog>({ name: "Goldy", breed: "Golden retriever" }, { name: "Tommy", breed: "Labrador" });
+
+console.log(dog1);
