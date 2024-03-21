@@ -1,10 +1,22 @@
-function printNumber(item, defaultValue) {
+// function printNumber(item: number, defaultValue: number): [number, number] {
+//     return [item, defaultValue];
+// }
+// function printString(item: string, defaultValue: string): [string, string] {
+//     return [item, defaultValue];
+// }
+// function printBoolean(item: boolean, defaultValue: boolean): [boolean, boolean] {
+//     return [item, defaultValue];
+// }
+// const num = printNumber(12, 20);
+// const str = printString("Hello", "World");
+// const bool = printBoolean(true, false);
+// console.log(num);
+// console.log(str);
+// console.log(bool);
+// ---------------------------------------------------------------
+function uniqueDataTypesFunc(item, defaultValue) {
     return [item, defaultValue];
 }
-function printString(item, defaultValue) {
-    return [item, defaultValue];
-}
-var num = printNumber(12, 20);
-var str = printString("Hello", "World");
-console.log(num);
-console.log(str);
+;
+var res = uniqueDataTypesFunc(10, 20);
+console.log(res);
