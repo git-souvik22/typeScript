@@ -22,5 +22,7 @@ function uniqueDataTypesFunc<Type>(item: Type, defaultValue: Type): [Type, Type]
     return [item, defaultValue];
 };
 
-const res = uniqueDataTypesFunc<number>(10, 20);
-console.log(res);
+const num = uniqueDataTypesFunc<number>(10, 20);
+const str = uniqueDataTypesFunc<string>("Hello", "World");
+console.log(num);
+console.log(str);

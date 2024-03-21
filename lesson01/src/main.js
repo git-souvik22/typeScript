@@ -18,5 +18,7 @@ function uniqueDataTypesFunc(item, defaultValue) {
     return [item, defaultValue];
 }
 ;
-var res = uniqueDataTypesFunc(10, 20);
-console.log(res);
+var num = uniqueDataTypesFunc(10, 20);
+var str = uniqueDataTypesFunc("Hello", "World");
+console.log(num);
+console.log(str);
