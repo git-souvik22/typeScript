@@ -5,4 +5,8 @@ function getRandomKeyValuePair<T>(obj: { [key: string]: T }): { key: string, val
 }
 const stringObject = { a: "apple", b: "banana", c: "cherry" };
 const res = getRandomKeyValuePair<string>(stringObject);
-console.log(res)
+console.log(res);
+
+const numberObject = { one: 1, two: 2, three: 3 };
+const resnum = getRandomKeyValuePair<number>(numberObject);
+console.log(resnum);

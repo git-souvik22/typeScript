@@ -6,3 +6,6 @@ function getRandomKeyValuePair(obj) {
 var stringObject = { a: "apple", b: "banana", c: "cherry" };
 var res = getRandomKeyValuePair(stringObject);
 console.log(res);
+var numberObject = { one: 1, two: 2, three: 3 };
+var resnum = getRandomKeyValuePair(numberObject);
+console.log(resnum);
