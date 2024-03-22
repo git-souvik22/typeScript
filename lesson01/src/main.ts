@@ -11,7 +11,7 @@ class Box<T> {
     };
 }
 
-const stringBox = new Box<string>("Hello, Typescript");
-console.log(stringBox.getContent())
-stringBox.setContent("New Value Added");
-console.log(stringBox.getContent());
+const numberBox = new Box<number>(20);
+console.log(numberBox.getContent());
+numberBox.setContent(100);
+console.log(numberBox.getContent());

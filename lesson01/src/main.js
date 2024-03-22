@@ -12,7 +12,7 @@ var Box = /** @class */ (function () {
     ;
     return Box;
 }());
-var stringBox = new Box("Hello, Typescript");
-console.log(stringBox.getContent());
-stringBox.setContent("New Value Added");
-console.log(stringBox.getContent());
+var numberBox = new Box(20);
+console.log(numberBox.getContent());
+numberBox.setContent(100);
+console.log(numberBox.getContent());
