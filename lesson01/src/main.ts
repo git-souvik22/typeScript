@@ -1,25 +1,6 @@
-function filterArray<T>(array: T[], condition: (item: T) => boolean): T[] {
-    return array.filter((item) => condition(item));
-};
+function reversePair<T, U>(value1: T, value2: U): [U, T] {
+    return [value2, value1];
+}
 
-const numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const evenNumbers = filterArray<number>(numberArray, (num) => num % 2 === 0);
-console.log(evenNumbers);
-
-const stringArray = ["apple", "banana", "cherry", "date"];
-const shortwords = filterArray<string>(stringArray, (word) => word.length < 6);
-console.log(shortwords);
-
-interface Fruit {
-    name: string,
-    color: string,
-};
-
-const fruitArray: Fruit[] = [
-    { name: "Apple", color: "Red" },
-    { name: "Banana", color: "Yellow" },
-    { name: "Cherry", color: "Red" }
-]
-
-const redFruits = filterArray<Fruit>(fruitArray, (fruit) => fruit.color === "Red");
-console.log(redFruits);
+const reversedPair = reversePair("World", "Hello");
+console.log(reversedPair);
