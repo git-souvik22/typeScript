@@ -1,14 +1,8 @@
-
-// ---------------------------------------------------------------
-function uniqueDataTypesFunc<Type>(item: Type, defaultValue: Type): [Type, Type] {
-    return [item, defaultValue];
-};
-
-interface Dog {
-    name: string,
-    breed: string,
+function getRandomKeyValuePair<T>(obj: { [key: string]: T }): { key: string, value: T } {
+    const keys = Object.keys(obj);
+    const randKey = keys[Math.floor(Math.random() * keys.length)];
+    return { key: randKey, value: obj[randKey] };
 }
-
-const dog1 = uniqueDataTypesFunc<Dog>({ name: "Goldy", breed: "Golden retriever" }, { name: "Tommy", breed: "Labrador" });
-
-console.log(dog1);
+const stringObject = { a: "apple", b: "banana", c: "cherry" };
+const res = getRandomKeyValuePair<string>(stringObject);
+console.log(res)

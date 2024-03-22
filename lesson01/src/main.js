@@ -1,7 +1,8 @@
-// ---------------------------------------------------------------
-function uniqueDataTypesFunc(item, defaultValue) {
-    return [item, defaultValue];
+function getRandomKeyValuePair(obj) {
+    var keys = Object.keys(obj);
+    var randKey = keys[Math.floor(Math.random() * keys.length)];
+    return { key: randKey, value: obj[randKey] };
 }
-;
-var dog1 = uniqueDataTypesFunc({ name: "Goldy", breed: "Golden retriever" }, { name: "Tommy", breed: "Labrador" });
-console.log(dog1);
+var stringObject = { a: "apple", b: "banana", c: "cherry" };
+var res = getRandomKeyValuePair(stringObject);
+console.log(res);
