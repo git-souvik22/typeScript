@@ -1,6 +1,17 @@
-function reversePair<T, U>(value1: T, value2: U): [U, T] {
-    return [value2, value1];
+class Box<T>{
+    private content: T
+    constructor(initialContent: T) {
+        this.content = initialContent;
+    }
+
+    getContent(): T {
+        return this.content;
+    }
+
+    setContent(newContent: T): void {
+        this.content = newContent;
+    }
 }
 
-const reversedPair = reversePair("World", "Hello");
-console.log(reversedPair);
+const stringBox = new Box<string>("Hello, TypeScript");
+console.log(stringBox.getContent());
