@@ -1,11 +1,6 @@
-function getRandomKeyValuePair(obj) {
-    var keys = Object.keys(obj);
-    var randKey = keys[Math.floor(Math.random() * keys.length)];
-    return { key: randKey, value: obj[randKey] };
+function filterArray(array, condition) {
+    return array.filter(function (item) { return condition(item); });
 }
-var stringObject = { a: "apple", b: "banana", c: "cherry" };
-var res = getRandomKeyValuePair(stringObject);
-console.log(res);
-var numberObject = { one: 1, two: 2, three: 3 };
-var resnum = getRandomKeyValuePair(numberObject);
-console.log(resnum);
+var numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var evenNumbers = filterArray(numberArray, function (num) { return num % 2 === 0; });
+console.log(evenNumbers);
