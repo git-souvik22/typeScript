@@ -8,3 +8,11 @@ console.log(evenNumbers);
 var stringArray = ["apple", "banana", "cherry", "date"];
 var shortwords = filterArray(stringArray, function (word) { return word.length < 6; });
 console.log(shortwords);
+;
+var fruitArray = [
+    { name: "Apple", color: "Red" },
+    { name: "Banana", color: "Yellow" },
+    { name: "Cherry", color: "Red" }
+];
+var redFruits = filterArray(fruitArray, function (fruit) { return fruit.color === "Red"; });
+console.log(redFruits);
