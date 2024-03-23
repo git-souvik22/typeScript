@@ -1,18 +1,9 @@
-var Box = /** @class */ (function () {
-    function Box(initialContent) {
-        this.content = initialContent;
+function exampleFunction(value) {
+    if (typeof value === "string") {
+        console.log(value.toUpperCase());
     }
-    Box.prototype.getContent = function () {
-        return this.content;
-    };
-    ;
-    Box.prototype.setContent = function (newContent) {
-        this.content = newContent;
-    };
-    ;
-    return Box;
-}());
-var numberBox = new Box(20);
-console.log(numberBox.getContent());
-numberBox.setContent(100);
-console.log(numberBox.getContent());
+    else {
+        console.log(value.toFixed(2));
+    }
+}
+exampleFunction("hello");

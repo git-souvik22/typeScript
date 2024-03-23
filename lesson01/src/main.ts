@@ -1,17 +1,10 @@
-class Box<T> {
-    private content: T;
-    constructor(initialContent: T) {
-        this.content = initialContent;
+type myType = string | number;
+function exampleFunction(value: myType): void {
+    if (typeof value === "string") {
+        console.log(value.toUpperCase());
+    } else {
+        console.log(value.toFixed(2))
     }
-    getContent(): T {
-        return this.content;
-    };
-    setContent(newContent: T): void {
-        this.content = newContent;
-    };
 }
 
-const numberBox = new Box<number>(20);
-console.log(numberBox.getContent());
-numberBox.setContent(100);
-console.log(numberBox.getContent());
+exampleFunction("hello");
