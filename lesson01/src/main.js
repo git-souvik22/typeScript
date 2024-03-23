@@ -7,3 +7,4 @@ function exampleFunction(value) {
     }
 }
 exampleFunction("hello");
+exampleFunction(20);

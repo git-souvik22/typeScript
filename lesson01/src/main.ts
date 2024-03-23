@@ -8,3 +8,4 @@ function exampleFunction(value: myType): void {
 }
 
 exampleFunction("hello");
+exampleFunction(20);
