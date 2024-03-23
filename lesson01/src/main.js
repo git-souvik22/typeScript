@@ -1,10 +1,29 @@
-function exampleFunction(value) {
-    if (typeof value === "string") {
-        console.log(value.toUpperCase());
+var Dog = /** @class */ (function () {
+    function Dog() {
+    }
+    Dog.prototype.bark = function () {
+        console.log("Whow Whow!");
+    };
+    return Dog;
+}());
+var Cat = /** @class */ (function () {
+    function Cat() {
+    }
+    Cat.prototype.meaw = function () {
+        console.log("Mew Maw!");
+    };
+    return Cat;
+}());
+function animalSound(animal) {
+    if (animal instanceof Dog) {
+        animal.bark();
     }
     else {
-        console.log(value.toFixed(2));
+        animal.meaw();
     }
+    ;
 }
-exampleFunction("hello");
-exampleFunction(20);
+var myDog = new Dog();
+var myCat = new Cat();
+animalSound(myDog);
+animalSound(myCat);

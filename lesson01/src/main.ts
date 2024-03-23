@@ -1,11 +1,25 @@
-type myType = string | number;
-function exampleFunction(value: myType): void {
-    if (typeof value === "string") {
-        console.log(value.toUpperCase());
-    } else {
-        console.log(value.toFixed(2))
+class Dog {
+    bark(): void {
+        console.log("Whow Whow!");
     }
 }
 
-exampleFunction("hello");
-exampleFunction(20);
+class Cat {
+    meaw(): void {
+        console.log("Mew Maw!");
+    }
+}
+
+function animalSound(animal: Dog | Cat): void {
+    if (animal instanceof Dog) {
+        animal.bark();
+    } else {
+        animal.meaw();
+    };
+}
+
+const myDog = new Dog();
+const myCat = new Cat();
+
+animalSound(myDog);
+animalSound(myCat);
