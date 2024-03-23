@@ -1,8 +1,3 @@
 "use strict";
-let username = "Souvik";
-console.log(username);
-let a = 12;
-let b = 6;
-let c = 2;
-console.log(a / b);
-console.log(c * b);
+const add = (a, b) => a + b;
+console.log(add(2, 4));
